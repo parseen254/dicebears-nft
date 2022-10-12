@@ -16,7 +16,8 @@ function Button({ text }: ButtonProps) {
       rounded-none
       hover:border  border-gray-600
       px-16 py-3
-      text-base font-medium 
+      text-base
+      font-chicagoflf
       focus:scale-110
       transition-all ease-in duration-300
       cursor-pointer
