@@ -6,22 +6,21 @@ export default function Web() {
   return (
     <div
       className="
-    flex justify-center items-center
-    min-h-screen w-full
-    "
+      flex justify-center items-center
+      min-h-screen w-full
+      "
     >
       <div
         className="
       flex flex-col justify-around items-center
-      w-2/3 h-[66vh] max-w-lg gap-16"
+      w-2/3 min-h-[66vh] max-w-lg gap-16"
       >
         <Card />
         <div
           className="
-        inline-flex 
-        justify-around
-        w-full
-        "
+          flex flex-col md:flex-row justify-around items-center gap-4
+          w-full
+          "
         >
           <Button
             text={"Previous"}

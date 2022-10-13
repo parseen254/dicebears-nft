@@ -11,7 +11,7 @@ function Button({ text, iconLeft, iconRight }: ButtonProps) {
     <button
       type="button"
       className="
-      min-w-[8rem]
+      
       inline-flex items-center
       rounded-none
       hover:border  border-gray-600
