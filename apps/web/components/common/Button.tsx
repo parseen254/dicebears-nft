@@ -2,11 +2,11 @@ import React from "react";
 
 interface ButtonProps {
   text: string;
+  iconLeft?: React.ReactNode;
+  iconRight?: React.ReactNode;
 }
 
-//     box-shadow: 0 0 0 1px var(--nsblack),var(--btn-ghost-x) var(--btn-ghost-y) 0 0 var(--nsgray),var(--btn-ghost-x) var(--btn-ghost-y) 0 1px var(--nsblack);
-
-function Button({ text }: ButtonProps) {
+function Button({ text, iconLeft, iconRight }: ButtonProps) {
   return (
     <button
       type="button"
@@ -27,7 +27,9 @@ function Button({ text }: ButtonProps) {
       hover:shadow-none
       "
     >
+      {iconLeft}
       {text}
+      {iconRight}
     </button>
   );
 }
